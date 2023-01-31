@@ -1,0 +1,23 @@
+//Applying the STAR principle to problem solving in learning to be a dev.
+
+#
+SITUATION:
+TASK:
+ACTION:
+RESULT:
+
+#1         Past commit git pull issue
+SITUATION: As a rookie dev, I went to a past commit and git checkout with it (because I like that version of code better).
+           I made changes to the code to my satisfaction, and wanted to apply them to the current code. Couldn't git pull as not on right branch.
+           Also had multiple merge conflicts.
+TASK:      Get back on the right branch, git pull and git push to apply the updated code.
+ACTION:    Git stash changes and git checkout main branch. Unstage and discard all changes (I had more than 700, no idea where they came from). Use git log to reset to              previous good version if any changes have already been applied. Merge conflicts should now be gone. Git stash apply. Stage and commit the desired changes.
+           Git pull and git push as normal.
+RESULT:    Git pull and git push successful, changes to code applied.
+
+#2         Vertical space gap not going away
+SITUATION: H3 and p in class="testimonial" too far away from each other vertically. Already margin=0; padding=0; border=0;, problem persisted.
+TASK:      Reduce space gap between H3 and p in class="testimonial".
+ACTION:    Open html file in browser, right-click to Inspect. In Elements, select area with issue and check CSS. Notice user agent (i.e. default) stylesheet.
+           Use specific keys for modifications, in this case margin-block-start: 0; margin-block-end: 0;
+RESULT:   Vertical space gap gone.

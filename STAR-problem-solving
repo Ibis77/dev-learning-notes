@@ -21,3 +21,19 @@ TASK:      Reduce space gap between H3 and p in class="testimonial".
 ACTION:    Open html file in browser, right-click to Inspect. In Elements, select area with issue and check CSS. Notice user agent (i.e. default) stylesheet.
            Use specific keys for modifications, in this case margin-block-start: 0; margin-block-end: 0;
 RESULT:   Vertical space gap gone.
+
+#3         let in JavaScript function
+SITUATION: indexOf function applied after toLowerCase, but not working properly.
+           function indexOfIgnoreCase(a,b) {
+             a.toLowerCase();
+             b.toLowerCase();
+             return a.indexOf(b);
+           }
+TASK:      Find out why the code is not working properly and fix it.
+ACTION:    use let
+RESULT:    function indexOfIgnoreCase(a,b) {
+             let aL = a.toLowerCase();
+             let bL = b.toLowerCase();
+             return aL.indexOf(bL);
+           }
+           The code works now. When a='bit', b='IT', it returns 1.

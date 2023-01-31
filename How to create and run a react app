@@ -1,0 +1,7 @@
+1. Use create react app
+2. Have node and npm installed; verify by checking version in VS Code terminal
+3. Have LTS version
+4. npx create-react-app <react-app-name>
+5. yarn is mainly packaged with react app, but many prefer npm
+6. #4 becomes npx create-react-app <react-app-name> --use-npm
+7. cd <react-app-name>, npm run start

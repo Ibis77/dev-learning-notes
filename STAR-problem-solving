@@ -43,3 +43,9 @@ SITUATION: Webpage not responsive to screen size changes.
 TASK:      Adjust CSS to make the webpage responsive to screen size changes.
 ACTION:    Replace "width: 1000px;" with "max-width: 1000px; width: 100%;"
 RESULT:    Webpage now responsive to screen size changes.
+
+#5
+SITUATION: Team collab project. Code working fine individually, but layout different when combined.
+TASK:      Make code compatible with other devs' code and make sure layout stays the same.
+ACTION:    Insert/add component name before class name, e.g. from "container" to "testimonial__container-text"
+RESULT:    Layout stays the same now, no code contamination.

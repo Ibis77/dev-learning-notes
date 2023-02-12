@@ -49,3 +49,9 @@ SITUATION: Team collab project. Code working fine individually, but layout diffe
 TASK:      Make code compatible with other devs' code and make sure layout stays the same.
 ACTION:    Insert/add component name before class name, e.g. from "container" to "testimonial__container-text"
 RESULT:    Layout stays the same now, no code contamination.
+
+#6
+SITUATION: Need to display all 3 slides on a larger screen, and only 1 slide on a smaller screen.
+TASK:      Find the right script/script configuration.
+ACTION:    Use "breakpoints" feature, with 600 and 961 as two breakpoints, and adjust "slidesPerView" and "spaceBetween" properties. See "./bite-sized notes".
+RESULT:    Responsive display achieved.

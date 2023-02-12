@@ -1,3 +1,9 @@
 Entry 1
 // flex: 1; often used in nav bar
 justify-content: center; == flex: 1;
+
+Entry 2
+// sass command lines in terminal - creates a map file to compile from a scss file to a css file
+// sass command to do the above automatically
+sass scss/style.scss:css/style.css
+sass --watch scss:css

@@ -1,0 +1,15 @@
+// Entry 1 Starters
+// This line imports the Express.js library and pulls the Express type from it, which will be used later.
+import express, { Express } from "express";
+
+// This line requires the express-async-errors middleware, which is a library that helps with handling asynchronous errors in an Express.js app.
+require("express-async-errors");
+
+// This line creates an instance of the Express.js application, and types it as "Express" which was imported in step 1.
+const app: Express = express();
+
+// This line sets up the express.json middleware, which will parse incoming JSON requests into JavaScript objects for use in the application.
+app.use(express.json());
+
+// This line exports the Express.js app instance as the default export, so that it can be imported and used in other parts of the application.
+export default app;

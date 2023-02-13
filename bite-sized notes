@@ -33,3 +33,17 @@ Entry 3
         },
       });
     </script>
+
+Entry 4
+// multi-definition
+// SCSS
+$primary-color: #555;
+$primary-border: 1px solid $primary-color;
+
+h2.page-header {
+  border: $primary-border;
+}
+// CSS
+h2.page-header {
+  border: 1px solid #555;
+}

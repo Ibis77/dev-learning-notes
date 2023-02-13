@@ -1,14 +1,14 @@
-Entry 1
+// Entry 1
 // flex: 1; often used in nav bar
 justify-content: center; == flex: 1;
 
-Entry 2
+// Entry 2
 // sass command lines in terminal - creates a map file to compile from a scss file to a css file
 // sass command to do the above automatically
 sass scss/style.scss:css/style.css
 sass --watch scss:css
 
-Entry 3
+// Entry 3
 // swiper - responsive to screen re-sizing - can be assisted with the "breakpoints" feature, e.g.
   <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -34,7 +34,7 @@ Entry 3
       });
     </script>
 
-Entry 4
+// Entry 4
 // multi-definition
 // SCSS
 $primary-color: #555;
@@ -48,7 +48,7 @@ h2.page-header {
   border: 1px solid #555;
 }
 
-Entry 5
+// Entry 5
 // nesting
 // SCSS
 .nav {
@@ -91,7 +91,7 @@ Entry 5
   color: #000;
 }
 
-Entry 6
+// Entry 6
 // @mixin and @include
 // SCSS
 @mixin alert {

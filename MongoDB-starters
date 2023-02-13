@@ -1,0 +1,53 @@
+// Entry 1 Connecting to a MongoDB database:
+const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://<username>:<password>@cluster0.mongodb.net/test?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
+
+// Entry 2 Inserting a document into a collection:
+const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://<username>:<password>@cluster0.mongodb.net/test?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  collection.insertOne({ device: 'phone', brand: 'Apple' }, function(err, res) {
+    console.log("Device inserted");
+    client.close();
+  });
+});
+
+// Entry 3 Finding documents in a collection:
+const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://<username>:<password>@cluster0.mongodb.net/test?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  collection.find({device: 'phone'}).toArray(function(err, res) {
+    console.log(res);
+    client.close();
+  });
+});
+
+// Entry 4 Updating documents in a collection:
+const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://<username>:<password>@cluster0.mongodb.net/test?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  collection.updateOne({ device: 'phone' }, { $set: { brand: 'Samsung' } }, function(err, res) {
+    console.log("Device updated");
+    client.close();
+  });
+});
+
+// Entry 5 Deleting documents in a collection:
+const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://<username>:<password>@cluster0.mongodb.net/test?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  collection.deleteOne({ device: 'phone' }, function(

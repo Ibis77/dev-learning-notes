@@ -112,3 +112,6 @@ h2.page-header {
 .alert-warning a {
   color: pink;
 }
+
+// Entry 7
+// CRUD = Create, read, update and delete

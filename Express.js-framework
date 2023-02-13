@@ -1,4 +1,4 @@
-// Entry 1 Starters
+// Entry 1 app.ts
 // This line imports the Express.js library and pulls the Express type from it, which will be used later.
 import express, { Express } from "express";
 
@@ -13,3 +13,12 @@ app.use(express.json());
 
 // This line exports the Express.js app instance as the default export, so that it can be imported and used in other parts of the application.
 export default app;
+
+// Run the following command in your project's root directory to install the "express" package:
+npm install express
+
+// And then run this command to install the "express-async-errors" package:
+npm install express-async-errors
+
+// Additionally, you will need to install the type definitions for Node.js by running the following command:
+npm install --save-dev @types/node

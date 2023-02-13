@@ -90,3 +90,25 @@ Entry 5
   background-color: blue;
   color: #000;
 }
+
+Entry 6
+// @mixin and @include
+// SCSS
+@mixin alert {
+  color: #000;
+
+  a {
+    color: pink;
+  }
+}
+
+.alert-warning {
+  @include alert;
+}
+//  CSS
+.alert-warning {
+  color: #000;
+}
+.alert-warning a {
+  color: pink;
+}

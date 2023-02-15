@@ -131,4 +131,8 @@ const getArrMax = function(){
 };
 
 // Entry 9
-// 3 ways to do shallow copy
+// find the largest value
+Math.max()
+// could be use in conjunction with map
+const arr = [{},{},{}];
+Math.max(...arr.map((item)=>item.y));

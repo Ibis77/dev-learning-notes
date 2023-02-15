@@ -136,3 +136,15 @@ Math.max()
 // could be use in conjunction with map
 const arr = [{},{},{}];
 Math.max(...arr.map((item)=>item.y));
+
+// Entry 10 - 3 ways to shallow copy
+// 1. Object.assign
+let Obj = {};
+Objet.assign(newObj, obj);
+console.log(newObj);
+// 2. Array.from
+let arr = [];
+const newArr = Array.from(arr);
+// 3. ...
+let arr = [];
+const newArr = [...arr];

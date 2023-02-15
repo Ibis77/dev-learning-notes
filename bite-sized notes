@@ -137,7 +137,7 @@ Math.max()
 const arr = [{},{},{}];
 Math.max(...arr.map((item)=>item.y));
 
-// Entry 10 - 3 ways to shallow copy
+// Entry 10 - 3 ways to shallow clone
 // 1. Object.assign
 let Obj = {};
 Objet.assign(newObj, obj);
@@ -148,3 +148,10 @@ const newArr = Array.from(arr);
 // 3. ...
 let arr = [];
 const newArr = [...arr];
+
+// Entry 11 deep clone
+// JSON.parse(JSON.stringify(object))
+const obj = {};
+const newObj = JSON.parse(JSON.stringify(obj));
+// undefined might cause issues
+// also see lodash cloneDeep() for same function, i.e. deep clone

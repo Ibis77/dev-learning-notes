@@ -155,3 +155,6 @@ const obj = {};
 const newObj = JSON.parse(JSON.stringify(obj));
 // undefined might cause issues
 // also see lodash cloneDeep() for same function, i.e. deep clone
+// structuredClone() - native to browser
+const obj = {};
+const newObj = structuredClone(obj);

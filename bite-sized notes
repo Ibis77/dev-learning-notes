@@ -115,3 +115,20 @@ h2.page-header {
 
 // Entry 7
 // CRUD = Create, read, update and delete
+
+// Entry 8
+// function declaration has hoisting, i.e. can be called before function
+// example below works
+getArrMax();
+function getArrMax(){
+  console.log('hello')
+};
+// function expression has not hoisting, i.e. can only be called after function
+// example below faults
+getArrMax();
+const getArrMax = function(){
+  console.log('hello')
+};
+
+// Entry 9
+// 3 ways to do shallow copy

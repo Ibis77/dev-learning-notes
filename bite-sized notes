@@ -158,3 +158,15 @@ const newObj = JSON.parse(JSON.stringify(obj));
 // structuredClone() - native to browser
 const obj = {};
 const newObj = structuredClone(obj);
+
+// Entry 12 grid column
+// divides the screen into 12 columns with 1 fractional unit each
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+// make the grid-item start from column #3, and span 4 columns, so 3, 4, 5, 6
+.grid-item {
+  grid-column-start: 3;
+  grid-column-end: span 4;
+}

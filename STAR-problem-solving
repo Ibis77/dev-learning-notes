@@ -55,3 +55,9 @@ SITUATION: Need to display all 3 slides on a larger screen, and only 1 slide on 
 TASK:      Find the right script/script configuration.
 ACTION:    Use "breakpoints" feature, with 600 and 961 as two breakpoints, and adjust "slidesPerView" and "spaceBetween" properties. See "./bite-sized notes".
 RESULT:    Responsive display achieved.
+
+#7
+SITUATION: Need to import openweathermapServiceAPI from openweathermapServiceAPI.js; SyntaxError: Cannot use import statement outside a module
+TASK:      Fix this error and use openweathermapServiceAPI
+ACTION:    const openweathermapServiceAPI = require("../services/openweathermapServiceAPI");
+RESULT:    Can use openweathermapServiceAPI now

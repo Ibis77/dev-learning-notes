@@ -61,3 +61,15 @@ SITUATION: Need to import openweathermapServiceAPI from openweathermapServiceAPI
 TASK:      Fix this error and use openweathermapServiceAPI
 ACTION:    const openweathermapServiceAPI = require("../services/openweathermapServiceAPI");
 RESULT:    Can use openweathermapServiceAPI now
+
+#8
+SITUATION: Need to cut text if too long in width
+TASK:      How to adjust in CSS?
+ACTION:    Google "CSS cut text if too long"
+RESULT:    Still working on this
+
+#9
+SITUATION: Need to add scroll bar on webpage
+TASK:      Learn how to deploy a scroll bar using CSS
+ACTION:    Google "CSS custom scroll bar" and found entry on w3school
+RESULT:    Copy and paste code, viola

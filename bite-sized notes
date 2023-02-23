@@ -199,3 +199,12 @@ const addAgeAttributeToPerson = (age, {firstName, lastName}) => ({
 const addAgeAttributeToPerson = (age, {firstName, lastName}) => ({  firstName, lastName, age  })
 //  or just:
 const addAgeAttributeToPerson = (age, person) => ({  ...person, age  })
+
+//  Entry 14  undefined?
+function getArrayLength(array) {
+  return array && array.length;
+}
+//  can be abbreviated to the following:
+function getArrayLength(array) {
+  return array?.length;
+}

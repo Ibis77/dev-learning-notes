@@ -170,3 +170,32 @@ const newObj = structuredClone(obj);
   grid-column-start: 3;
   grid-column-end: span 4;
 }
+
+//  Entry 13 object literal property value shorthand
+const addAgeAttributeToPerson = (age, person) => ({
+  firstName: person.firstName,
+  lastName: person.lastName,
+  age: age
+})
+//  can be abbreviated to the following:
+const addAgeAttributeToPerson = (age, person) => ({
+  firstName: person.firstName,
+  lastName: person.lastName,
+  age
+})
+//  can be further abbreviated to the following:
+const addAgeAttributeToPerson = (age, {firstName, lastName}) => ({
+  firstName: firstName,
+  lastName: lastName,
+  age
+})
+//  can be further abbreviated to the following:
+const addAgeAttributeToPerson = (age, {firstName, lastName}) => ({
+  firstName,
+  lastName,
+  age
+})
+//  or simply:
+const addAgeAttributeToPerson = (age, {firstName, lastName}) => ({  firstName, lastName, age  })
+//  or just:
+const addAgeAttributeToPerson = (age, person) => ({  ...person, age  })

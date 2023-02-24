@@ -73,3 +73,9 @@ SITUATION: Need to add scroll bar on webpage
 TASK:      Learn how to deploy a scroll bar using CSS
 ACTION:    Google "CSS custom scroll bar" and found entry on w3school
 RESULT:    Copy and paste code, viola
+
+#10
+SITUATION: CSS style not appropriately applied to one of the <div>
+TASK:      inspect on live server, check HTML code; identify missing className or misplaced </div>
+ACTION:    adding missing className and correctly placing </div>
+RESULT:    CSS style correctly applied now

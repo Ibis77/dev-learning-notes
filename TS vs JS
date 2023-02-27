@@ -1,0 +1,77 @@
+//  description of TS vs. JS
+Type system: TypeScript has a static type system that allows developers to specify types for variables, functions, and other entities in their code. This can help catch errors at compile-time and make code more self-documenting. JavaScript, on the other hand, is a dynamically-typed language, which means that types are determined at runtime.
+Code structure: TypeScript allows for the use of classes, interfaces, and modules to organize code, making it more modular and reusable. JavaScript, while it can be structured in a similar way, does not have these language features built in.
+Development experience: With TypeScript, you can use IDEs and other tools to get better code completion, refactoring, and other development features that are not available with plain JavaScript.
+Compatibility: TypeScript code can be transpiled to JavaScript, which means that it can be run in any JavaScript environment. This makes it easier to adopt TypeScript in existing projects or to use it in libraries and frameworks.
+
+//  example 1: Declaring variables and using if-else statements
+//  difference = ": number"
+//  TS:
+let num: number = 5;
+
+if (num > 0) {
+  console.log("Positive");
+} else {
+  console.log("Negative");
+}
+
+//  JS:
+let num = 5;
+
+if (num > 0) {
+  console.log("Positive");
+} else {
+  console.log("Negative");
+}
+
+//  example 2: Defining a function and calling it
+//  difference = ": number"
+//  TS:
+function add(a: number, b: number): number {
+  return a + b;
+}
+
+let result = add(2, 3);
+console.log(result);
+
+//  JS:
+function add(a, b) {
+  return a + b;
+}
+
+let result = add(2, 3);
+console.log(result);
+
+//  example 3: Using a class to define an object and accessing its properties:
+//  TS:
+class Person {
+  name: string;
+  age: number;
+
+  constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+  }
+}
+
+let person = new Person("John", 30);
+person.greet();
+
+//  JS:
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+  }
+}
+
+let person = new Person("John", 30);
+person.greet();

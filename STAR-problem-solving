@@ -79,3 +79,9 @@ SITUATION: CSS style not appropriately applied to one of the <div>
 TASK:      inspect on live server, check HTML code; identify missing className or misplaced </div>
 ACTION:    adding missing className and correctly placing </div>
 RESULT:    CSS style correctly applied now
+
+#11
+SITUATION: Member of a team project using React to build an AI-enabled auto-marking tool, initially using vanilla HTML as requested
+TASK:      To re-build the Landing Page that contains buttons linking to "Sign up" and "Log in" pages in the React framework
+ACTION:    Re-built Landing Page with folder complete with .jsx, .css files with rendering features leading to respective pages
+RESULT:    Re-created Landing Page with React features successfully linking to other pages in the project

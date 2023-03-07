@@ -85,3 +85,9 @@ SITUATION: Member of a team project using React to build an AI-enabled auto-mark
 TASK:      To re-build the Landing Page that contains buttons linking to "Sign up" and "Log in" pages in the React framework
 ACTION:    Re-built Landing Page with folder complete with .jsx, .css files with rendering features leading to respective pages
 RESULT:    Re-created Landing Page with React features successfully linking to other pages in the project
+
+#12
+SITUATION: Development period, supposed to be able to navigate between pages by manually adding a word at the end of the address, but could not do so. Was using vanilla HTML for an index.html page under /public
+TASK:      Solve this issue of not being able to navigate between pages with manual typing.
+ACTION:    Deleted everything in index.html and restored it to its default content.
+RESULT:    Things are working now, able to navigate between pages with manual typing.

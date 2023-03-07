@@ -91,3 +91,10 @@ SITUATION: Development period, supposed to be able to navigate between pages by 
 TASK:      Solve this issue of not being able to navigate between pages with manual typing.
 ACTION:    Deleted everything in index.html and restored it to its default content.
 RESULT:    Things are working now, able to navigate between pages with manual typing.
+
+#13
+SITUATION: Imported component export const defaultFrontEndPrefix = "localhost:3001"; from /constants/index, when used in <SignUpTag href={`http://${defaultFrontEndPrefix}/signup`}>Sign up</SignUpTag>, prompted to be "unreachable code".
+TASK:      To identify the factor causing the "unreachable code" issue
+ACTION:    Noticed the "hello world"; one line above the <SignUpTag>, and removed it.
+RESULT:    The default frontend prefix component is working properly.
+

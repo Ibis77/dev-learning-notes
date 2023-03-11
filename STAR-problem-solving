@@ -101,6 +101,6 @@ RESULT:    The default frontend prefix component is working properly.
 #14
 SITUATION: Calling OpenAI to generate response with OpenAI_URL and OpenAI_API_KEY, and want to keep private OpenAI_API_KEY confidential
 TASK:      To use OpenAI_API_KEY in the project without exposing it publicly on GitHub repo
-ACTION:    Create .env file to be .gitignore and store OpenAI_API_KEY in .env; use const to call its value in other documents
+ACTION:    Created .env file to be .gitignore and store OpenAI_API_KEY in .env; use const to call its value in other documents
 RESULT:    Successfully used OpenAI_URL and OpenAI_API_KEY without exposing them publicly
 

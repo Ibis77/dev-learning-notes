@@ -208,3 +208,7 @@ function getArrayLength(array) {
 function getArrayLength(array) {
   return array?.length;
 }
+
+//  Entry 15  .env file
+//  .env can be put in .gitignore so that it doesn't get displayed to the public
+//  save confidential keys, e.g. OpenAI_API_KEY in the file to be able to a) use it in the project, and b) not expose it publicly

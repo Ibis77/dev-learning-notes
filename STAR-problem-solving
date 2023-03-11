@@ -104,3 +104,8 @@ TASK:      To use OpenAI_API_KEY in the project without exposing it publicly on 
 ACTION:    Created .env file to be .gitignore and store OpenAI_API_KEY in .env; use const to call its value in other documents
 RESULT:    Successfully used OpenAI_URL and OpenAI_API_KEY without exposing them publicly
 
+#15
+SITUATION: const topic = {Topic} - Error: 'Topic' only refers to a type, but is being used as a value here.
+TASK:      To fix this problem
+ACTION:    Placed Topic as a parameter in the form of "Topic: string"
+RESULT:    Problem fixed.

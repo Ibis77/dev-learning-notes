@@ -109,3 +109,9 @@ SITUATION: const topic = {Topic} - Error: 'Topic' only refers to a type, but is 
 TASK:      To fix this problem
 ACTION:    Placed Topic as a parameter in the form of "Topic: string"
 RESULT:    Problem fixed.
+
+#16        
+SITUATION: AWS api key compromised due to small error on DevOps part, AWS account restricted
+TASK:      To delete and replace the API key and securely store and communicate
+ACTION:    Engaged in discussion and as a team decided on team leader keeping API key and distributing it one-on-one
+RESULT:    AWS api key compromise risk reduced

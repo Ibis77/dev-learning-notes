@@ -115,3 +115,9 @@ SITUATION: AWS api key compromised due to small error on DevOps part (listing on
 TASK:      To delete and replace the API key and securely store and communicate
 ACTION:    Engaged in discussion and as a team decided on team leader keeping API key and distributing it one-on-one
 RESULT:    AWS api key compromise risk reduced
+
+#17
+SITUATION: When I was making changes on branch 125, I also accidentally made changes on branch 122; branch 122 is not yet ready.
+TASK:      I would need to find a way to merge both 122 and 125 into main, once branch 122 is ready.
+ACTION:    I first got branch 122 ready, and merged it into branch 125, then merged branches 122 and 125 into main, respectively.
+RESULT:    I succeeded in merging both branches 122 and 125 into main despite the initial error in branch 125 of changing content in branch 122.
